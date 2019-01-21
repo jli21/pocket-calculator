@@ -1,1 +1,35 @@
+<!DOCTYPE html>
 
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "calc.css"/>
+    <script type = "text/javascript" src = "calculator.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 id = "name">Pocket Calculator</h1>
+    <div class = "calculator">
+      <p class = "display-bar" id = "output">0</p>
+      <button class = "grid-item" id = "button-clear" onclick = "clearing();">AC</button>
+      <button class = "grid-item" id = "modifier-negation" onclick = "negate();">+/-</button>
+      <button class = "grid-item" id = "modifier-percentage" onclick = "percentage();">%</button>
+      <button class = "grid-item" id = "operator-add" onclick = "chooseOperator(this);">+</button>
+      <button class = "grid-item" id = "button-num-7" onclick = "digit(7);"> 7 </button>
+      <button class = "grid-item" id = "button-num-8" onclick = "digit(8);"> 8 </button>
+      <button class = "grid-item" id = "button-num-9" onclick = "digit(9);"> 9 </button>
+      <button class = "grid-item" id = "operator-subtract" onclick = "chooseOperator(this);">-</button>
+      <button class = "grid-item" id = "button-num-4" onclick = "digit(4);"> 4 </button>
+      <button class = "grid-item" id = "button-num-5" onclick = "digit(5);"> 5 </button>
+      <button class = "grid-item" id = "button-num-6" onclick = "digit(6);"> 6 </button>
+      <button class = "grid-item" id = "operator-multiply" onclick = "chooseOperator(this);">x</button>
+      <button class = "grid-item" id = "button-num-1" onclick = "digit(1);"> 1 </button>
+      <button class = "grid-item" id = "button-num-2" onclick = "digit(2);"> 2 </button>
+      <button class = "grid-item" id = "button-num-3" onclick = "digit(3);"> 3 </button>
+      <button class = "grid-item" id = "operator-divide" onclick = "chooseOperator(this);">/</button>
+      <button class = "grid-item" id = "button-num-0" onclick = "digit(0);"> 0 </button>
+      <button class = "grid-item" id = "button-num-decimal" onclick = "decimal();">.</button>
+      <button class = "grid-item" id = "button-equals" onclick = "equals();">=</button>
+    </div>
+    <button onclick = "showList();">Operations</button>
+  </body>
+</html>
